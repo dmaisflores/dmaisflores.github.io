@@ -670,6 +670,10 @@ footer {
         opacity: 0;
     }
 
+    header .back {
+        left: -400px;    
+    }
+
     .goup-btn {
         margin: 10px;
     }

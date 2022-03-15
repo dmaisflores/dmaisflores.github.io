@@ -306,17 +306,22 @@ close.addEventListener("click", function(){
     removeAllChilds(produtos);
 });
 
-document.addEventListener('keydown', function(e) {
-    if(e.key == "Escape"){
-        produtos.classList.remove("visible");
-        body.classList.remove("no-overflow");
+function Escape(){
+    produtos.classList.remove("visible");
+    body.classList.remove("no-overflow");
 
-        hamburguer.classList.remove("clicked");
-        hidderMenu.classList.remove("visible");
-        closeBtn.style = "display: none;";
-        
-        removeAllChilds(produtos);
-    }
+    hamburguer.classList.remove("clicked");
+    hidderMenu.classList.remove("visible");
+    closeBtn.style = "display: none;";
+    
+    removeAllChilds(produtos); 
+}
+
+document.addEventListener('keydown', function(e) {
+    if(e.key == "Escape") Escape();
+});
+document.addEventListener('backbutton', function(e) {
+    if(e.key == "Escape") Escape();
 });
 
 
