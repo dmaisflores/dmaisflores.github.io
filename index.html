@@ -1,27 +1,219 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmais Flores</title>
 
-<html lang="pt-BR">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./IMG/icon.png">
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="flores, dmais flores, pegue e monte, cestas, artesanato">
-        <meta name="description" content="Aluguel de flores artificiais e bolo fake, compre cestas de café da manhã, e muito mais!">
+    <!-- CASO O JAVASCRIPT POR ALGUM MOTIVO NÃO ESTEJA ATIVADO: -->
+    <noscript>
+        <a href="https://www.google.com/search?client=opera&q=como+ativar+o+javascript&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">
+            JavaScript Desativado, Por favor, ative-o para poder acessar o site
+        </a>
+        <div class="noscript-back"></div>
+    </noscript>
 
-        <title>Dmais Flores</title>
-
-        <link rel="stylesheet" href="./style.css">
-        <link rel="icon" href="./flower-icon.png">
-    </head>
+    <div class="loading">
+        <div class="loading-circle">
+            
+        </div>
+    </div>
     
-    <body>
+    <!-- BOTÃO VOLTE PARA CIMA -->
+    <div class="goup-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="white" class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+        </svg>
+    </div>
+
+    <!-- MENU DIREITO ESCONDIDO -->
+    <div class="hidden-menu">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#produ">Nossos Produtos</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#face">Facebook</a></li>
+            <li><a href="#insta">Instagram</a></li>
+            <li><a href="#whats">Whatsapp</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+        </ul>
+    </div>
+
+    <!-- BARRA DO TOP QUE SEGUIRA O SITE TODO -->
+    <div class="topbar">
+        <div class="ham">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         
-        <main>
-            <h1>Dmais Flores</h1>
-            <p>Site em construção</p>
-            <p>🌸</p>
-        </main>
+        <div class="topbar-logo">
+            <img src="./IMG/logo.png" alt="" width="150">
+        </div>
+        
+        <a href="https://api.whatsapp.com/send?phone=5534992026815&text=Olá Dmais Flores, gostaria de" target="_blank"> 
+            <div class="btn topbar">
+                <p>Nosso whatsapp</p>
+            </div>
+        </a>
+    </div>
 
-    </body>
+    <!-- JA QUE O "FIXED" SOBREPOEM OS ELEMENTOS, ESTE ELEMENTO É UM PLACEHOLDER PARA QUE NO INICIO, ELE NÃO SOBREPONHA NADA -->
+    <div class="topbar-placeholder" id="home"></div>
 
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="back">
+            <div class="black"></div>
+            <img src="./IMG/20180125_182943.jpg" alt="foto de fundo">
+        </div>
+        
+        <div class="logo">
+            <img src="./IMG/logo.png" alt="logomarca">
+            
+            <div class="slogan">
+                <h1>Dmais Flores</h1>
+                <p>Flores para cada momento.</p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ENTRE EM CONTATO, WHATSAPP -->
+    <a href="https://api.whatsapp.com/send?phone=5534992026815&text=Olá Dmais Flores, gostaria de" target="_blank">
+        <div class="btn whatsapp">
+        <img src="./IMG/WhatsApp-Logo.png" alt="whatsapp logo" width="100">
+            <p>Entre em contato agora mesmo!</p>
+        </div>
+    </a>
+
+
+    <!-- NOSSOS PRODUTOS OVERLAY -->
+    <div class="close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+    </div>
+
+    <!-- TELA EXTRA QUE APARECE QUANDO O USUARIO CLICA EM UM DOS MENSU NA SEÇÃO DE "NOSSOS PRODUTOS" -->
+    <div class="produ-over">
+
+    </div>
+
+    <main>
+
+        <h1 id="produ">Nossos Produtos</h1>
+        <p id="locacao">Locação / vendas</p>
+        <div class="produ">
+
+            <div class="menu cestas">
+                <img src="./IMG/Cestas/Cesta_capa.jpg" width="300">
+                <p>Cestas</p>
+            </div>
+
+            <div class="menu arranjos">
+                <img src="./IMG/Arranjos/Arranjos_capa.jpg" width="300">
+                <p>Arranjos</p>
+            </div>
+
+            <div class="menu vasos">
+                <img src="./IMG/peças_decor/pecas_decor_capa.jpeg" width="300">
+                <p>Peças para Decoração</p>
+            </div>
+
+            <div class="menu buque-presente">
+                <img src="./IMG/Buques Presente/buques_presente_capa.jpg" width="300">
+                <p>Buquês para Presente</p>
+            </div>
+
+            <div class="menu buque-noiva">
+                <img src="./IMG/Buque Noiva/Buque_noiva_capa.jpg" width="300" style="position:relative; top: 20px">
+                <p>Buquês de Noiva</p>
+            </div>
+            
+            <div class="menu kits">
+                <img src="./IMG/Kits/Kits_capa.jpg" width="300">
+                <p>Locação de kits e Decorações</p>
+            </div>
+
+            <div class="menu artesanato">
+                <img src="./IMG/Artesanato/Artesanato_capa.jpeg" width="300">
+                <p>Produtos para Artesanato</p>
+            </div>
+
+        </div>
+
+        
+        <h1 id="galeria">Galeria</h1>
+        <div class="galeria">
+            <div><img src="./IMG/Galeria/1.jpeg"></div>
+            <div><img src="./IMG/Galeria/2.jpeg"></div>
+            <div><img src="./IMG/Galeria/3.jpeg" style="position: relative; top: -50px;"></div>
+            <div><img src="./IMG/Galeria/4.jpeg"></div>
+            <div><img src="./IMG/Galeria/5.jpeg" style="position: relative; top: -80px;"></div>
+            <div><img src="./IMG/Galeria/6.jpeg"></div>
+            <div><img src="./IMG/Galeria/7.jpeg"></div>
+            <div><img src="./IMG/Galeria/8.jpeg"></div>
+            <div><img src="./IMG/Galeria/9.jpeg" style="position: relative; top: -80px;"></div>
+            <div><img src="./IMG/Galeria/10.jpeg"></div>
+        </div>
+
+        <!-- Social -->
+        <h1>Redes Sociais</h1>
+        <div class="social">
+            <a href="https://www.facebook.com/desterrosilvaflor" target="_blank">
+                <div class="face" id="face">
+                    <div>
+                        <img src="./IMG/facebook-logo-3-1.png" alt="facebook logo" width="100">
+                        <h1>Facebook</h1>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/dmaisfloresdecor/" target="_blank">
+                <div class="insta" id="insta">
+                    <div>
+                        <img src="./IMG/Instagram_icon.png.png" alt="instagram logo" width="100">
+                        <h1>Instagram</h1>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=5534992026815&text=Olá Dmais Flores, " target="_blank">
+                <div class="whats" id="whats">
+                    <div>
+                        <img src="./IMG/WhatsApp.svg.png" alt="whatsapp logo" width="110">
+                        <h1>Whatsapp</h1>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Sobre Nós -->
+        <div class="sobre" id="sobre">
+            <h1>Sobre Nós</h1>
+            <p>
+                Trabalhamos com decorações como: <br>
+                casamentos, 15 anos, aniversários, batizados e outros.<br>
+                Temos também cestas para presentes.<br>
+                Para consulta de produtos e preços, acesse nosso whatsapp: <a href="https://api.whatsapp.com/send?phone=5534992026815&text=Olá Dmais Flores, gostaria de" target="_blank">(34) 9.9202-6815</a> <br>
+            </p>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <img src="./IMG/icon.png" alt="girasol icone" width="70">
+        <p>2010 - 2022 &copy; DmaisFlores.</p>
+    </footer>
+
+</body>
+    <script src="./script.js"></script>
 </html>
